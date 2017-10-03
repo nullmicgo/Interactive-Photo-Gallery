@@ -1,0 +1,58 @@
+/*
+=================
+Base Layout
+=================
+*/
+
+a{
+	text-decoration: none;
+}
+
+input[type='text']{
+	width: 320px;
+	border-radius: 5px;
+	height: 20px;
+	margin-top: 0px;
+	padding: 10px;
+	color: grey;
+	margin: 10px;
+	border-color: #C0C0C0;
+}
+
+/*
+=================
+Base Container
+=================
+*/
+
+.container{
+    width: 85%;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+	margin-top: 20px;
+
+}
+
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+}
+
+.gallery-item{
+	flex-grow: 1;
+	margin: 20px;
+}
+
+
+
+/*
+=================
+Media Query
+=================
+*/
+
