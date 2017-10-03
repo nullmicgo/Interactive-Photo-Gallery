@@ -49,6 +49,25 @@ Base Container
 }
 
 
+.lb-data .lb-close{
+	display: none;
+}
+
+.lightbox .lb-image {
+    border: none;
+}
+
+
+.lb-data .lb-details{
+	text-align: center;
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+.lightboxOverlay{
+	background: #2e2d2d;
+}
 
 /*
 =================
