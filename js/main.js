@@ -13,6 +13,7 @@ function handleSearch(element){
     $('.gallery-item').each(function () {
 
       if(keywords==""){
+            $(this).attr('data-lightbox',"gallery");
           $(this).show();
       }else{
          var title = $(this).find("img").attr("alt");
@@ -30,20 +31,18 @@ function handleSearch(element){
           }
          if(shouldShould==true){
             //found it
+
+            $(this).attr('data-lightbox',"gallery");
             $(this).show();
           }
           else{
+            $(this).attr('data-lightbox',"");
             $(this).hide();
           }
       }
         
     });
 }
-
-
-
-
-
 
   $("input[type='text']").keypress(function(e) { // text written
   handleSearch($(this));
