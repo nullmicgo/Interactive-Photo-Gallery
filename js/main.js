@@ -44,32 +44,16 @@ function handleSearch(element){
     });
 }
 
-  $("input[type='text']").keypress(function(e) { // text written
-  handleSearch($(this));
+ 
+    $("input[type='text']").keyup(function(e) {
+        handleSearch($(this));
+
     });
 
-    $("input[type='text']").keyup(function(e) {
-        if (e.keyCode == 8 || e.keyCode == 46) { //backspace and delete key
-  handleSearch($(this));
-        } else { // rest ignore
-            e.preventDefault();
-        }
-    });
+
     $("input[type='text']").bind('paste', function(e) { // text pasted
   handleSearch($(this));
     });
 
-    $("input[type='text']").change(function(e) { // select element changed
-  handleSearch($(this));
-    });
 
-    $("input[type='text']").change(function(e) { // radio changed
-  handleSearch($(this));
-    });
 
-    $("input[type='text']").keypress(function(e) { // password written
-  handleSearch($(this));
-    });
-    $("input[type='text']").bind('paste', function(e) { // password pasted
-  handleSearch($(this));
-    });
