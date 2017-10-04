@@ -50,6 +50,9 @@ Base Container
 	margin-right: 0px;
 }
 
+.gallery-item > img{
+	width: 150px;
+}
 
 .lb-data .lb-close{
 	display: none;
@@ -108,6 +111,10 @@ Media Query
 	.gallery-item{
 		flex-grow: 1;
 		margin: 20px;
+	}
+
+	.gallery-item > img{
+		width: 100%;
 	}
 
 	.clear-fix::after{
